@@ -4,9 +4,213 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Réservation</title>
+    <title>Accueil</title>
 </head>
 <body>
+
+    <!-- HEADER -->
+    <div class="header">
+
+        <!-- NAV -->
+        <div class="nav">
+
+            <!-- LOGO -->
+                <img src="img/logo.png" alt="">
+            <!-- /LOGO -->
+
+            <!-- LISTE MENU NAV -->
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="produits.html">Produits</a></li>
+                <li><a href="reservation.html">Réservation</a></li>
+            </ul>
+            <!-- /LISTE MENU NAV -->
+
+        </div>
+        <!-- /NAV -->
+
+        <!-- BANNER -->
+        <a href="#" class="banner">
+            <img src="img/banner.jpg" alt="#" width="100%" height="auto"/>
+        </a>
+        <!-- /BANNER -->
+
+    </div>
+    <!-- /HEADER -->
+
+    <br>
+
+    <!-- FORMULAIRE D'INSCRIPTION -->
+    <form action="Script_do_Formulario.php" method="post" style="margin: 10px;">
+
+        <h1 style="text-align: center;">Formulaire de Réservation</h1>
+
+        <br><br>
+
+        <!-- DONNÉES PERSONNELLES -->
+        <fieldset>
+            <legend><b>Données Personnelles</b></legend>
+            <table cellspacing="10">
+
+                <tr>
+                    <td>
+                        <label for="prenom">Prénom : </label>
+                    </td>
+                    <td align="left">
+                        <input type="text" name="prenom" required>
+                    </td>
+                    <td>
+                        <label for="nom">Nom : </label>
+                    </td>
+                    <td align="left">
+                        <input type="text" name="nom" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Date de naissance : </label>
+                    </td>
+                    <td align="left">
+                        <input type="text" name="jour" size="2" maxlength="2" value="jj"> 
+                        <input type="text" name="mois" size="2" maxlength="2" value="mm"> 
+                        <input type="text" name="annee" size="4" maxlength="4" value="aaaa">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="doc">Document : </label>
+                    </td>
+                    <td align="left">
+                        <input type="text" name="doc" size="13" maxlength="13" required> 
+                    </td>
+                </tr>
+
+            </table>
+        </fieldset>
+        
+        <br>
+
+        <!-- ADRESSE -->
+        <fieldset>
+            <legend><b>Adresse</b></legend>
+            <table cellspacing="10">
+        
+                <tr>
+                    <td>
+                        <label for="adresse">Adresse :</label>
+                    </td>
+                    <td align="left">
+                        <input type="text" name="adresse">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="complement">Complement :</label>
+                    </td>
+                    <td align="left">
+                        <input type="text" name="complement">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="codepostal">Code Postal : </label>
+                    </td>
+                    <td align="left">
+                        <input type="number" name="code postal" size="5">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="pays">Pays :</label>
+                    </td>
+                    <td align="left">
+                        <select name="pays"> 
+                        <option value="fr">France</option> 
+                        <option value="br">Brésil</option> 
+                        <option value="an">Angleterre</option> 
+                        <option value="eua">États-Unis</option>
+                        </select>
+                    </td>
+                </tr>
+
+            </table>
+        </fieldset>
+
+        <br>
+        
+        <!-- DONNÉES DE CONNEXION -->
+        <fieldset>
+            <legend><b>Données de connexion</b></legend>
+            <table cellspacing="10">
+
+                <tr>
+                    <td>
+                        <label for="email">E-mail : </label>
+                    </td>
+                    <td align="left">
+                        <input type="text" name="email" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="image">Image de profil :</label>
+                    </td>
+                    <td>
+                        <input type="file" name="image">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="login">Connexion de l'utilisateur : </label>
+                    </td>
+                    <td align="left">
+                        <input type="text" name="login" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="pass">Mot de passe : </label>
+                    </td>
+                    <td align="left">
+                        <input type="password" name="pass" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="passconfirm">Confirmer le mot de passe : </label>
+                    </td>
+                    <td align="left">
+                        <input type="password" name="passconfirm" required>
+                    </td>
+                </tr>
+
+            </table>
+        </fieldset>
+
+        <br>
+
+        <input type="reset" value="Effacer">
+        <input type="submit">
+
+    </form>
+        <!-- /FORMULAIRE D'INSCRIPTION -->
+
+    <br><br><br>
+
+    <!-- FOOTER -->
+    <footer>
+        Copyright 2023 © 
+    </footer>
+    <!-- /FOOTER -->
     
 </body>
 </html>
